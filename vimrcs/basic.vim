@@ -38,6 +38,9 @@ set rtp+=~/.fzf
 
 set number
 
+" Set number enable
+set number
+
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
