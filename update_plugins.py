@@ -53,10 +53,10 @@ vim-abolish https://github.com/tpope/tpope-vim-abolish
 mru.vim https://github.com/vim-scripts/mru.vim
 rust.vim https://github.com/rust-lang/rust.vim
 vim-markdown https://github.com/plasticboy/vim-markdown
-gist-vim https://github.com/mattn/gist-vim
 vim-ruby https://github.com/vim-ruby/vim-ruby
 typescript-vim https://github.com/leafgarland/typescript-vim
 vim-javascript https://github.com/pangloss/vim-javascript
+nnn.vim https://github.com/mcchrish/nnn.vim
 vim-python-pep8-indent https://github.com/Vimjas/vim-python-pep8-indent
 """.strip()
 

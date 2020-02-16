@@ -31,7 +31,12 @@
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sets how many lines of history VIM has to remember
-set history=500
+set history=1500
+
+set rtp+=~/.fzf
+
+
+set number
 
 " Enable filetype plugins
 filetype plugin on
@@ -87,7 +92,7 @@ set hid
 
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
-set whichwrap+=<,>,h,l
+set whichwrap+=<,>
 
 " Ignore case when searching
 set ignorecase
@@ -189,7 +194,7 @@ set tw=500
 
 set ai "Auto indent
 set si "Smart indent
-set wrap "Wrap lines
+set nowrap "Wrap lines
 
 
 """"""""""""""""""""""""""""""
@@ -205,7 +210,7 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
-map <space> /
+map <space> za
 map <C-space> ?
 
 " Disable highlight when <leader><cr> is pressed
@@ -327,6 +332,14 @@ map <leader>x :e ~/buffer.md<cr>
 
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
+
+au BufNewFile,BufRead *.py  set tabstop=4
+au BufNewFile,BufRead *.py  set softtabstop=4
+au BufNewFile,BufRead *.py  set shiftwidth=4
+au BufNewFile,BufRead *.py  set textwidth=79
+au BufNewFile,BufRead *.py  set expandtab
+au BufNewFile,BufRead *.py  set autoindent
+au BufNewFile,BufRead *.py  set fileformat=unix
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
